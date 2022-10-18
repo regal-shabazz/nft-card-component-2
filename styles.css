@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    background-color: hsl(217, 54%, 11%);
+    width: 100vw;
+}
+
+.container { 
+    width: 90%;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main {
+    background-color: hsl(216, 50%, 16%);
+    width: 100%;
+    max-width: 375px;
+    padding: 2em;
+    position: relative;
+    margin: 4rem 0;
+    border-radius: 20px;
+}
+
+.nft-image-container {
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.view-icon {
+    position: absolute;
+    padding: 100%;
+    background-color: hsl(178, 100%, 50%);
+    opacity: 0;
+}
+
+.view-icon:hover {
+    background-color: hsla(178, 100%, 50%, 0.5);
+    opacity: 1;
+}
+
+.nft-image {
+    width: 100%;
+}
+
+p {
+    color: hsl(215, 51%, 70%);
+    font-size: 18px;
+}
+
+h2 {
+    color: hsl(0, 0%, 100%);
+    margin: 1em 0;
+    letter-spacing: 2px;
+}
+
+h2:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.main-paragraph {
+    line-height: 1.5em;
+}
+
+.nft-price-and-duration-container {
+    margin: 1.2em 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nft-price,
+.nft-duration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nft-price {
+    color: hsl(178, 100%, 50%);
+    font-weight: 400;
+}
+
+.eth-icon,
+.clock-icon {
+    margin-right: 0.5em;
+}
+
+.avatar-creator-info-container {
+    border-top: 1px solid  hsl(215, 32%, 27%);
+    padding-top: 1.2em;
+}
+
+.creator-info {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.avatar {
+    width: 40px;
+    border: 1px solid white;
+    border-radius: 20px;
+    margin-right: 1em;
+}
+
+span {
+    color: hsl(0, 0%, 100%);
+    margin-left: 5px;
+}
+
+span:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+/* *** */
+
+.attribution {
+    text-align: center;
+    color: yellow
+}
+
+a {
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+}
+
+a:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+@media screen only and (min-width: 376px) {
+    main {
+        max-width: 375px;
+    }
+}
